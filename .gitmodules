@@ -1,3 +1,9 @@
 [submodule "RecStudio"]
 	path = RecStudio
 	url = https://github.com/USTCLLM/RecStudio.git
+[submodule "GRE"]
+	path = GRE
+	url = https://github.com/pepsi2222/GREB.git
+[submodule "CELA"]
+	path = CELA
+	url = https://github.com/pepsi2222/CELA.git
