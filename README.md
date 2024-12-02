@@ -1,6 +1,6 @@
 # RecFM
 
-Comprehensive tools and projects and frameworks for developing foundation models tailored to recommendation systems, developped by the USTCLLM group at USTC, leaded by [Prof. Defu Lian](https://faculty.ustc.edu.cn/liandefu).
+Comprehensive tools, projects and frameworks for developing foundation models tailored to recommendation systems, developped by the USTCLLM group at USTC, leaded by [Prof. Defu Lian](https://faculty.ustc.edu.cn/liandefu).
 
 ## Overview
 

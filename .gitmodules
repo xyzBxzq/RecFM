@@ -3,7 +3,10 @@
 	url = https://github.com/USTCLLM/RecStudio.git
 [submodule "GRE"]
 	path = GRE
-	url = https://github.com/pepsi2222/GREB.git
+	url = https://github.com/USTCLLM/GREB.git
 [submodule "CELA"]
 	path = CELA
-	url = https://github.com/pepsi2222/CELA.git
+	url = https://github.com/USTCLLM/CELA.git
+[submodule "RecStudio-Industry"]
+	path = RecStudio-Industry
+	url = https://github.com/USTCLLM/RecStudio-Industry
