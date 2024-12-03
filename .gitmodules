@@ -9,4 +9,5 @@
 	url = https://github.com/USTCLLM/CELA.git
 [submodule "RecStudio-Industry"]
 	path = RecStudio-Industry
-	url = https://github.com/USTCLLM/RecStudio-Industry
+	url = git@github.com:USTCLLM/RecStudio-Industry.git
+	branch = main
