@@ -11,3 +11,7 @@
 	path = RecStudio-Industry
 	url = git@github.com:USTCLLM/RecStudio-Industry.git
 	branch = main
+[submodule "InfoNexus"]
+	path = InfoNexus
+	url = https://github.com/USTCLLM/InfoNexus.git
+	branch = main
