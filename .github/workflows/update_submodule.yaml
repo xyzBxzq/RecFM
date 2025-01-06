@@ -20,6 +20,8 @@ jobs:
 
     - name: Update submodules to latest commit
       run: |
+        git config --global user.name "$GitHub Actions Bot"
+        git config --global user.email "actions-bot@users.noreply.github.com"
         git submodule update --remote --merge
         git add .
         git commit -m "Update submodules to latest"
