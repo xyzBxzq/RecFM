@@ -20,9 +20,16 @@ jobs:
 
     - name: Update submodules to latest commit
       run: |
-        git config --global user.name "$GitHub Actions Bot"
+        git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions-bot@users.noreply.github.com"
         git submodule update --remote --merge
-        git add .
-        git commit -m "Update submodules to latest"
-        git push origin main
+
+        if [[ $(git status --porcelain) ]]; then 
+          # Check if there are changes
+          echo "Changes detected, committing and pushing..."
+          git add .
+          git commit -m "Update submodules to latest"
+          git push origin main
+        else
+          echo "No changes detected, skipping commit and push."
+        fi
