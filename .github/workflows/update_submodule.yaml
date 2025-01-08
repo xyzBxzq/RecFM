@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: "0 0 * * *"  # daily update
 
+permissions:
+  contents: write  # 确保有对仓库内容的写权限
+  pull-requests: write  # 如果涉及拉取请求，也需要相应权限
+
 jobs:
   update-submodules:
     runs-on: ubuntu-latest
@@ -16,12 +20,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        submodules: recursive  # update all submodules
+        submodules: recursive  # update all submoduleswith:
+        fetch-depth: 0  # fetch all history for all tags and branches
 
     - name: Update submodules to latest commit
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions-bot@users.noreply.github.com"
+        git submodule status
+        git submodule update --init --recursive
         git submodule update --remote --merge
 
         if [[ $(git status --porcelain) ]]; then 
