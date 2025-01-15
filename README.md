@@ -16,6 +16,8 @@ RecFM is a collection of tools and frameworks designed to facilitate the develop
 
 4. **GRE**: A universal recommendation text embedding model that has been deeply trained and aligned on multiple public datasets across different recommendation domains. It serves multi-domain recommendation systems for text representation extraction.
 
+5. **Nexus**: Nexus is the first Pytorch-based information retrieval development toolkit aimed at industrial internet applications such as recommendation system and document retrieval.
+
 
 ## Usage
 
